@@ -23,7 +23,7 @@
   <!-- <link rel="stylesheet" href="./assets/css/glightbox.min.css" /> -->
   <link rel="stylesheet" href="../../../../cdn.jsdelivr.net/npm/swiper%408/swiper-bundle.min.css" />
   <!-- Tailwind css -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="html/morex-demo/morex/assets/css/styles.css">
 
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -329,7 +329,7 @@
           </div>
           <div class="sm:mb-[50px]">
             <div class="relative">
-              <img class="relative z-10 sm:mx-auto" src="assets/images/about-me.png" alt="">
+              <img class="relative z-10 sm:mx-auto" src="html/morex-demo/morex/assets/images/about-me.png" alt="">
               <span
                 class="absolute sm:w-[100px] sm:h-[100px] only-md:w-[150px] only-md:h-[150px] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] border-[8px] lg:border-[13px] border-accent1 rounded-full xs:bottom-[-25%] sm:bottom-[-12%] bottom-[-18%] ltr:sm:left-[3%] ltr:left-[-18%] rtl:sm:right-[3%] rtl:right-[-18%] animateUpDown"></span>
             </div>
@@ -672,6 +672,18 @@
   <!-- Custom js -->
   <script src="assets/js/script.js" defer></script>
 
+  
+  <!-- Swiper js -->
+  <script src="../cdn.jsdelivr.net/npm/swiper%408/swiper-bundle.min.js"></script>
+
+  <!-- imagesloaded js -->
+  <script src="html/morex-demo/morex/assets/js/imagesloaded.pkgd.min.js" defer></script>
+
+  <!-- Isotope js -->
+  <script src="html/morex-demo/morex/assets/js/isotope.pkgd.min.js" defer></script>
+
+  <!-- Custom js -->
+  <script src="html/morex-demo/morex/assets/js/script.js" defer></script>
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
@@ -683,7 +695,7 @@
 
     document.getElementById('downloadBtn').addEventListener('click', function () {
       const link = document.createElement('a');
-      link.href = './assets/cv/mohamed moustir-1.pdf';
+      link.href = 'html/morex-demo/morex/assets/cv/mohamed moustir-1.pdf';
       link.download = 'mohamed moustir-1.pdf';
       link.click();
     });
